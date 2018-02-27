@@ -26,8 +26,6 @@ int main(void){
 	}
 
 	print(array);
-
 	free(array);
-
 	return 0;
 }
