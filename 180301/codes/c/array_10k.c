@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <sys/time.h>
 
 #define ARRAY_SIZE 10000
 #define TRIAL 100000
@@ -10,30 +10,35 @@ typedef struct{
 	int size;
 } Array;
 
-void process(){
+struct timeval s, e;
+
+double process(){
+
+	gettimeofday(&s, NULL);
+
 	Array *array = (Array*)malloc(sizeof(Array));
 	array->size = 10000;
 
 	for(int i = 0; i < array->size; i++){
 		array->data[i] = i;
 	}
+
+	gettimeofday(&e, NULL);
+
+	return (e.tv_sec - s.tv_sec) + (e.tv_usec - s.tv_usec)*1.0E-6; 
+
 }
 
 int main(){
 
-	clock_t t1, t2;
-
+	
 	double sum; sum = 0;
 
 	for(int i = 0; i < TRIAL; i++){
-		t1 = clock();
-		process();
-		t2 = clock();
-
-		sum += (double)(t2-t1)/CLOCKS_PER_SEC;
+		sum += process();
 	}
 
-	printf("%f\n", (double)sum / TRIAL);
+	printf("%lf\n", (double)sum / TRIAL);
 
 	return 0;
 }
