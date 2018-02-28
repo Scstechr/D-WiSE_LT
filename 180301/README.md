@@ -15,6 +15,6 @@
 
 ### Links:
 
-[Jupyter Notebook](https://github.com/Scstechr/D-WiSE_LT/blob/master/180301/codes/Numpy_and_Python_Crash_Course.ipynb) for this talk. 
+[Jupyter Notebook](https://github.com/Scstechr/D-WiSE_LT/blob/master/180301/Numpy_and_Python_Crash_Course.ipynb) for this talk. 
 
 Codes are [here](https://github.com/Scstechr/D-WiSE_LT/tree/master/180301/codes).
