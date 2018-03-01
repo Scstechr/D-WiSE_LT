@@ -4,7 +4,7 @@
 ### Introduction:
 
 - This talk will be focus on `numpy` especially on matrix calculations.
-- This talk also gives bliefly introduction of `python` itself.
+- This talk also gives blief introduction of `python` itself.
 - Slides are available via `Dropbox/D-WiSE_WorkSpace/Research/D-WiSE_LT`.
 
 ### Requirements:
