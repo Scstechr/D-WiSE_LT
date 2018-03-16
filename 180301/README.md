@@ -3,7 +3,7 @@
 ### Date: 2018/3/1
 ### Introduction:
 
-- This talk will be focus on `numpy` especially on matrix calculations.
+- This talk will focus on `numpy` especially on matrix calculations.
 - This talk also gives blief introduction of `python` itself.
 - Slides are available via `Dropbox/D-WiSE_WorkSpace/Research/D-WiSE_LT`.
 
